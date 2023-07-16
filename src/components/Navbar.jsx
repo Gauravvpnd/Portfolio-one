@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
-import Logo from '../components/Logo.png'
+// import Logo from '../components/Logo.png'
 import { Link } from 'react-scroll'
 const Navbar = () => {
     const[nav , navBar] = useState(false)
@@ -26,11 +26,19 @@ const Navbar = () => {
             link: 'contact',
         },
     ]
+   
   return (
     <div>
         <div className='flex justify-between items-center w-full h-20 px4text-white bg-black fixed'>
             <div>
-            <img src={Logo} alt="" srcset="" className='flex items-end' />
+          
+            {/* <img src={Logo} alt="" srcset="" className='flex items-end cursor-pointer'  /> */}
+            <h1 className='text-white text-4xl px-6 font-semibold italic'>
+                <a href="https://gauravvpnd.netlify.app/">
+                    Gauravvpnd
+                </a>
+            </h1>
+            
             </div>
             <ul className='hidden md:flex'>
                 {links.map(({id, link}) => 

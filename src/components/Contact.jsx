@@ -1,5 +1,6 @@
 import React from 'react'
-
+import {FaGithub, FaLinkedin} from 'react-icons/fa';
+import { BsTwitter } from 'react-icons/bs'
 const Contact = () => {
     return (
       <div
@@ -44,6 +45,14 @@ const Contact = () => {
               </button>
             </form>
           </div>
+          <li className='flex flex-row space-x-3 justify-center'>
+          <a href="https://github.com/Gauravvpnd" target='_black' rel="noreferrer"><FaGithub size={20} /></a>
+           <a href="https://www.linkedin.com/in/gaurav-p-814063218" target='_black' rel="noreferrer"><FaLinkedin size={20} /></a>
+          <a href="https://twitter.com/gauravvpnd" target='_black' rel="noreferrer">
+            <BsTwitter size={20} />
+          </a>
+          </li>
+          
         </div>
       </div>
     );
